@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Radio Player</string>
+	<string name="app_version">0.2</string>
+	<string name="button_file">Player V (file chunks)</string>
+	<string name="button_stop">STOP</string>
+	<string name="text_exception">Error</string>
+	<string name="text_buffering">Buffering...</string>
+	<string name="text_buffers">Buffers (ms)</string>
+	<string name="text_buffers_decode">Decode</string>
+	<string name="text_using_FAAD2">FAAD2 ...</string>
+	<string name="text_using_FFmpeg">FFmpeg ...</string>
+	<string name="text_using_OpenCORE">OpenCORE ...</string>
+	<string name="text_using_MMSWMA">MMS/WMA ...</string>
+	<string name="text_using_file_chunks">Using file chunks ...</string>
+	<string name="text_playing">Playing...</string>
+	<string name="text_stopped">Stopped</string>
+</resources>
