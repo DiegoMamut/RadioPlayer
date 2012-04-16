@@ -17,7 +17,6 @@
 **/
 package com.biophysics.radioplayer;
 
-import com.biophysics.radioplayer.R;
 
 
 

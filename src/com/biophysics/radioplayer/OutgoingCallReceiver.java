@@ -6,7 +6,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import com.biophysics.radioplayer.R;
 
 
 public class OutgoingCallReceiver extends BroadcastReceiver {

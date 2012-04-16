@@ -17,11 +17,11 @@
  **/
 package com.biophysics.radioplayer;
 
-import java.net.URL;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.lang.String;
-import java.lang.StringBuilder;
+//import java.net.URL;
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
+//import java.lang.String;
+//import java.lang.StringBuilder;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -66,7 +66,7 @@ public class AACPlayerActivity extends Activity implements
 	TelephonyManager telephonyManager;
 	PhoneStateListener listener;
 
-	static final int txtBufAudio = 5500;
+	static final int txtBufAudio = 1500;
 	static final int txtBufDecode = 700;
 	private ProgressBar progress;
 	private Handler uiHandler;
@@ -417,7 +417,7 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlFour() throws Exception {
-		URL url44 = new URL("http://www.bbc.co.uk/radio/listen/live/r4.asx");
+/*		URL url44 = new URL("http://www.bbc.co.uk/radio/listen/live/r4.asx");
 		
 		// URL from http://faq.external.bbc.co.uk/questions/radio/online_radiohowto/?src=interstitial
 		BufferedReader reader = null;
@@ -440,213 +440,57 @@ public class AACPlayerActivity extends Activity implements
 		String part1 = builder.substring(builder.indexOf(start)
 				+ start.length());
 		String ret = part1.substring(0, part1.indexOf(end) - 2 );
+		
+*/		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio4/radio4_bb_live_int_eq1_sl0";
+		
 		return ret;
 	}
 
 	private String getUrlOne() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r1.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
+		
 		return ret;
 	}
 
 	private String getUrlOnextra() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r1x.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/1xtra/1xtra_bb_live_int_eq1_sl0";
 		return ret;
 	}
 
 	private String getUrlTwo() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r2.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio2/radio2_bb_live_int_ep1_sl0";
 		return ret;
 	}
 
 	private String getUrlThree() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r3.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio3/radio3_bb_live_int_eq1_sl0";
 		return ret;
 	}
 
 	private String getUrlFive() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r5.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/radio5_bb_live_int_ep1_sl0";
 		return ret;
 	}
 
 	private String getUrlFivextra() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r5l.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0";
 		return ret;
 	}
 
 	private String getUrlFourxtra() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/r4x.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio4/radio4xtra_bb_live_int_ep1_sl0";
 		return ret;
 	}
 
 	private String getUrlAsian() throws Exception {
-		URL url4 = new URL("http://www.bbc.co.uk/radio/listen/live/ran.asx");
-		BufferedReader reader = null;
-		StringBuilder builder = new StringBuilder();
-		// try {
-		reader = new BufferedReader(new InputStreamReader(url4.openStream(),
-				"UTF-8"));
-		for (String line; (line = reader.readLine()) != null;) {
-			builder.append(line.trim());
-		}
-		// } finally {
-		// if (reader != null) try { reader.close(); } catch (Exception
-		// logOrIgnore) {}
-		// }
-
-		// String Contents4 = (String) url4.getContent();
-
-		String start = "<ref href=\"";
-		String end = "=\" />";
-		String part1 = builder.substring(builder.indexOf(start)
-				+ start.length());
-		String ret = part1.substring(0, part1.indexOf(end) - 1 );
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/asiannet/asiannet_bb_live_int_ep1_sl0";
 		return ret;
 	}
 
 	private String getUrlWs() throws Exception {
 //		URL url4 = new URL("https://media-translate.googlecode.com/svn/trunk/etc/playlists/radio-bbc-world.xspf");
 // URL below obtained from http://www.bbc.co.uk/worldservice/institutional/2009/03/000000_mobile.shtml
-		URL url4 = new URL("http://www.bbc.co.uk/worldservice/meta/tx/nb/live/eneuk.asx");
+/*		URL url4 = new URL("http://www.bbc.co.uk/worldservice/meta/tx/nb/live/eneuk.asx");
 		BufferedReader reader = null;
 		StringBuilder builder = new StringBuilder();
 		// try {
@@ -661,8 +505,9 @@ public class AACPlayerActivity extends Activity implements
 		String part1 = builder.substring(builder.indexOf(start)
 				+ start.length());
 		String ret = part1.substring(0, part1.indexOf(end) );
-//		String ret = "mms://a243.l3944038972.c39440.g.lm.akamaistream.net/D/243/39440/v0001/reflector:38972";
+*///		String ret = "mms://a243.l3944038972.c39440.g.lm.akamaistream.net/D/243/39440/v0001/reflector:38972";
 //		String ret = "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio4_q";
+		String ret = "mms://a243.l3944038972.c39440.g.lm.akamaistream.net/D/243/39440/v0001/reflector:38972";
 		return ret;
 	}
 
