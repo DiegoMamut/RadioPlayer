@@ -102,7 +102,6 @@ public class ArrayAACPlayer extends AACPlayer {
         long profMs = 0;
         long profSamples = 0;
         long profSampleRate = 0;
-        int profCount = 0;
 
         try {
             Decoder.Info info = decoder.start( reader );
@@ -135,7 +134,6 @@ public class ArrayAACPlayer extends AACPlayer {
 
                 profMs += System.currentTimeMillis() - tsStart;
                 profSamples += nsamp;
-                profCount++;
 
 //                Log.d( LOG, "play(): decoded " + nsamp + " samples" );
 
