@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 
-public class OutgoingCallReceiver extends BroadcastReceiver {
+public class OutgoingCallReceiver extends BroadcastReceiver implements PlayerCallback {
 	
 
 
@@ -31,6 +31,27 @@ public class OutgoingCallReceiver extends BroadcastReceiver {
 		System.exit(0);
 		
 //		Toast.makeText(context, info, Toast.LENGTH_LONG).show();
+	}
+
+	public void playerStarted() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void playerPCMFeedBuffer(boolean isPlaying, int audioBufferSizeMs,
+			int audioBufferCapacityMs) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void playerStopped(int perf) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void playerException(Throwable t) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
