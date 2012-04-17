@@ -22,37 +22,65 @@
 				android:weightSum="1" android:layout_height="0dp" android:layout_weight="1">
 			</LinearLayout>
 
-
     <LinearLayout
-            android:orientation="horizontal" android:paddingTop="1mm" 
-            android:weightSum="1" android:baselineAligned="false" 
-            android:layout_height="0dp" android:layout_width="230dp" 
-            android:layout_weight="1" android:layout_gravity="center_horizontal">
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingTop="1mm"
+        android:weightSum="1" >
 
-               <ImageButton android:id="@+id/play1" android:background="@color/button_main_color" android:src="@drawable/bbcradio1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.50"/>
- 
-                     
-              <ImageButton android:id="@+id/play1xtra" android:background="@color/button_main_color" android:src="@drawable/bbcradio1xtra" android:layout_weight="0.50" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/play1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.50"
+            android:background="@color/button_main_color"
+            android:src="@drawable/bbcradio1" />
 
-      
+        <ImageButton
+            android:id="@+id/play1xtra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.50"
+            android:background="@color/button_main_color"
+            android:src="@drawable/bbcradio1xtra" />
                      />
     </LinearLayout>
-
 
    <LinearLayout
-            android:orientation="horizontal" android:paddingTop="1mm" 
-            android:weightSum="1" android:baselineAligned="false" 
-            android:layout_height="0dp" android:layout_width="230dp" 
-            android:layout_weight="1" android:layout_gravity="center_horizontal">
+       android:layout_width="230dp"
+       android:layout_height="0dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_weight="1"
+       android:baselineAligned="false"
+       android:orientation="horizontal"
+       android:paddingTop="1mm"
+       android:weightSum="1" >
 
-               <ImageButton android:id="@+id/play2" android:background="@color/button_main_color" android:src="@drawable/bbcradio2" android:layout_weight="0.50" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"/>
- 
-                     
-              <ImageButton android:id="@+id/play3" android:background="@color/button_main_color" android:src="@drawable/bbcradio3" android:layout_weight="0.50" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"/>
+       <ImageButton
+           android:id="@+id/play2"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_horizontal"
+           android:layout_weight="0.50"
+           android:background="@color/button_main_color"
+           android:src="@drawable/bbcradio2" />
 
-      
+       <ImageButton
+           android:id="@+id/play3"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_horizontal"
+           android:layout_weight="0.50"
+           android:background="@color/button_main_color"
+           android:src="@drawable/bbcradio3" />
                      />
-    </LinearLayout>
+   </LinearLayout>
 
    <LinearLayout
             android:orientation="horizontal" android:paddingTop="1mm" 
@@ -97,28 +125,36 @@
     </LinearLayout>
     
     -->
-        <LinearLayout
-            android:orientation="horizontal" android:paddingTop="1mm" 
-            android:weightSum="1" android:baselineAligned="false" 
-            android:layout_height="0dp" android:layout_width="230dp" 
-            android:layout_weight="1" android:layout_gravity="center_horizontal">
 
-              <ImageButton android:id="@+id/playWs" 
-              android:background="@color/button_main_color" 
-              android:src="@drawable/bbcws" android:layout_weight="0.50"
-               android:layout_gravity="center" android:layout_width="wrap_content" 
-               android:layout_height="match_parent"/>
-   
-              <ImageButton android:id="@+id/playAsian" 
-              android:background="@color/button_main_color"
-               android:src="@drawable/asian" android:layout_weight="0.50"
-                android:layout_gravity="center" android:layout_width="wrap_content" 
-                android:layout_height="match_parent"/>
-      
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingTop="1mm"
+            android:weightSum="1" >
+
+            <ImageButton
+                android:id="@+id/playWs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:background="@color/button_main_color"
+                android:src="@drawable/bbcws" />
+
+            <ImageButton
+                android:id="@+id/playAsian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:background="@color/button_main_color"
+                android:src="@drawable/asian" />
                      />
-    </LinearLayout>
-    
-    
+        </LinearLayout>
     
     <LinearLayout
             android:orientation="horizontal" android:paddingTop="1mm" 
