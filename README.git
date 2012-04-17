@@ -15,7 +15,9 @@ Next steps:
   git commit -m 'first commit'
   git remote add origin git@github.com:biophysics/RadioPlayer.git
   git push -u origin master
-      
+
+forget all changes
+git reset --hard HEAD       
 
 Existing Git Repo?
 
