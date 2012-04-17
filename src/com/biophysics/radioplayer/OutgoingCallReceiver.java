@@ -27,6 +27,7 @@ public class OutgoingCallReceiver extends BroadcastReceiver implements PlayerCal
             String info = "Detect Calls sample application\nOutgoing number: " + phonenumber;
 
             Toast.makeText(context, info, Toast.LENGTH_LONG).show();
+            
             System.exit(0);
     }
 
@@ -51,30 +52,5 @@ public class OutgoingCallReceiver extends BroadcastReceiver implements PlayerCal
 		// TODO Auto-generated method stub
 		
 	}
-<<<<<<< HEAD
-=======
-
-	public void playerStarted() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void playerPCMFeedBuffer(boolean isPlaying, int audioBufferSizeMs,
-			int audioBufferCapacityMs) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void playerStopped(int perf) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void playerException(Throwable t) {
-		// TODO Auto-generated method stub
-		
-	}
-	
->>>>>>> origin/master
 
 }
