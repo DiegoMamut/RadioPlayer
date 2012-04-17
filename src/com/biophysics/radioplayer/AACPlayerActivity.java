@@ -22,12 +22,12 @@ package com.biophysics.radioplayer;
 //import java.io.InputStreamReader;
 //import java.lang.String;
 //import java.lang.StringBuilder;
+import android.util.Log;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
-import android.content.ComponentName;
 import android.content.Context;
-import android.graphics.BitmapFactory;
 import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -36,11 +36,8 @@ import android.telephony.TelephonyManager;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.app.Notification;
-import android.app.NotificationManager;
 
 //import android.widget.ArrayAdapter;
 //import android.widget.AutoCompleteTextView;
@@ -430,7 +427,7 @@ public class AACPlayerActivity extends Activity implements
 
 	private void stop() {
 		mStop.setAlpha(255);
-//		if (mWifiLock.isHeld()) mWifiLock.release();
+		if (mWifiLock.isHeld()) mWifiLock.release();
 		// if (aacFileChunkPlayer != null) { aacFileChunkPlayer.stop();
 		// aacFileChunkPlayer = null; }
 		if (aacPlayer != null) {
@@ -596,6 +593,9 @@ public class AACPlayerActivity extends Activity implements
 	
 	private boolean checkNetwork() {
 		
+	    boolean HaveConnectedWifi = false;
+
+		
 		ConnectivityManager conMgr =  (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
 		if ( conMgr.getNetworkInfo(0).getState() == NetworkInfo.State.DISCONNECTED 
 			    &&  conMgr.getNetworkInfo(1).getState() == NetworkInfo.State.DISCONNECTED) {
@@ -605,11 +605,17 @@ public class AACPlayerActivity extends Activity implements
             return false;
 		} else {
 			disableButtons();
-			mWifiLock.acquire();
+			NetworkInfo[] netInfo = conMgr.getAllNetworkInfo();
+					for (NetworkInfo ni : netInfo) {
+							Log.d("HaveNetworkConnection()", ni.toString());
+								if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+										HaveConnectedWifi = true;
+										mWifiLock.acquire();
+//								if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+//										HaveConnectedMobile = true;
+					}
 			return true;
-
-			
-		}
+			}
 	}
 
 	/*
