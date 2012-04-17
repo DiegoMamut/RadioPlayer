@@ -39,8 +39,7 @@ public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCal
     }
 
 	public void playerStarted() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
 	}
 
 	public void playerPCMFeedBuffer(boolean isPlaying, int audioBufferSizeMs,
