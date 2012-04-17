@@ -22,7 +22,6 @@ public class OutgoingCallReceiver extends BroadcastReceiver implements PlayerCal
 
             String phonenumber = intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER);
 
-
             String info = "Detect Calls sample application\nOutgoing number: " + phonenumber;
 
             Toast.makeText(context, info, Toast.LENGTH_LONG).show();
