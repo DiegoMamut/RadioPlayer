@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Radio Player 2</string>
-	<string name="app_version">0.2</string>
+	<string name="app_name">Radio Player</string>
+	<string name="app_version">v2</string>
 	<string name="button_file">Player V (file chunks)</string>
 	<string name="button_stop">STOP</string>
 	<string name="text_exception">Error</string>

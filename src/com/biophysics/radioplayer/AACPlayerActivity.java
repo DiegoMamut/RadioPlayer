@@ -608,9 +608,10 @@ public class AACPlayerActivity extends Activity implements
 			NetworkInfo[] netInfo = conMgr.getAllNetworkInfo();
 					for (NetworkInfo ni : netInfo) {
 							Log.d("HaveNetworkConnection()", ni.toString());
-								if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+								if (ni.getTypeName().equalsIgnoreCase("WIFI")) {
 										HaveConnectedWifi = true;
 										mWifiLock.acquire();
+								}
 //								if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
 //										HaveConnectedMobile = true;
 					}
