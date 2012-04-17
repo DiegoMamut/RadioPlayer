@@ -24,7 +24,11 @@ package com.biophysics.radioplayer;
 //import java.lang.StringBuilder;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.NotificationManager;
+import android.content.ComponentName;
 import android.content.Context;
+import android.graphics.BitmapFactory;
+import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.PhoneStateListener;
@@ -35,6 +39,8 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.app.Notification;
+import android.app.NotificationManager;
 
 //import android.widget.ArrayAdapter;
 //import android.widget.AutoCompleteTextView;
@@ -43,7 +49,10 @@ import android.widget.ImageButton; //import android.widget.EditText;
 import android.widget.ProgressBar; //import android.widget.TextView;
 import android.widget.TextView;
 
+
 import com.biophysics.radioplayer.R;
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiManager.WifiLock;
 
 /**
  * This is the main activity.
@@ -65,6 +74,13 @@ public class AACPlayerActivity extends Activity implements
 
 	TelephonyManager telephonyManager;
 	PhoneStateListener listener;
+	
+    // Wifi lock that we hold when streaming files from the internet, in order to prevent the
+    // device from shutting off the Wifi radio
+    WifiLock mWifiLock;
+    AudioManager mAudioManager;
+    NotificationManager mNotificationManager;
+
 
 	static final int txtBufAudio = 1500;
 	static final int txtBufDecode = 700;
@@ -260,6 +276,7 @@ public class AACPlayerActivity extends Activity implements
 		}
 	}
 
+
 	// //////////////////////////////////////////////////////////////////////////
 	// Protected
 	// //////////////////////////////////////////////////////////////////////////
@@ -298,6 +315,12 @@ public class AACPlayerActivity extends Activity implements
 		mStop.setOnClickListener(this);
 		enableButtons();
 		uiHandler = new Handler();
+		
+
+        // Create the Wifi lock (this does not acquire the lock, this just creates it)
+        mWifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE))
+                        .createWifiLock(WifiManager.WIFI_MODE_FULL, "mylock");
+
 	}
 
 	@Override
@@ -318,7 +341,6 @@ public class AACPlayerActivity extends Activity implements
 	private void startOne(int decoder) throws Exception {
 		// stop();
 		mStop.setEnabled(true);
-
 		aacPlayer = new ArrayAACPlayer(ArrayDecoder.create(decoder), this,
 				txtBufAudio, txtBufDecode);
 		aacPlayer.playAsync(getUrlOne());
@@ -408,6 +430,7 @@ public class AACPlayerActivity extends Activity implements
 
 	private void stop() {
 		mStop.setAlpha(255);
+//		if (mWifiLock.isHeld()) mWifiLock.release();
 		// if (aacFileChunkPlayer != null) { aacFileChunkPlayer.stop();
 		// aacFileChunkPlayer = null; }
 		if (aacPlayer != null) {
@@ -578,9 +601,11 @@ public class AACPlayerActivity extends Activity implements
 			    &&  conMgr.getNetworkInfo(1).getState() == NetworkInfo.State.DISCONNECTED) {
 			/*		if ( conMgr.getNetworkInfo(0).isConnected() == true) {*/
 			displayAlert();
+			if (mWifiLock.isHeld()) mWifiLock.release();
             return false;
 		} else {
 			disableButtons();
+			mWifiLock.acquire();
 			return true;
 
 			
