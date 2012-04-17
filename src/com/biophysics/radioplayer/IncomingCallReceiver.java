@@ -9,30 +9,34 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
-public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback{
-	
+public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback {
 
-	
-	
-	@Override
-	public void onReceive(Context context, Intent intent) {
-		Bundle bundle = intent.getExtras();
-		
-		if(null == bundle)
-			return;
-		
-		String state = bundle.getString(TelephonyManager.EXTRA_STATE);
-				
-		if(state.equalsIgnoreCase(TelephonyManager.ACTION_PHONE_STATE_CHANGED))
+    @Override
+    public void onReceive(Context context, Intent intent) {
+            Bundle bundle = intent.getExtras();
+           
+            if(null == bundle)
+                    return;
+           
+            Log.i("IncomingCallReceiver",bundle.toString());
+           
+            String state = bundle.getString(TelephonyManager.EXTRA_STATE);
+                           
+            Log.i("IncomingCallReceiver","State: "+ state);
+           
+            if(state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))
+            {
+                    String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
+                           
+                    Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
+                   
+                    String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
+                   
+                    Toast.makeText(context, info, Toast.LENGTH_LONG).show();
+                    System.exit(0);
 
-		{
-            String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
-            Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
-            String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
-            Toast.makeText(context, info, Toast.LENGTH_LONG).show();
-			System.exit(0);
-		}
-	}
+            }
+    }
 
 	public void playerStarted() {
 		// TODO Auto-generated method stub
@@ -56,3 +60,4 @@ public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCal
 	}
 
 }
+
