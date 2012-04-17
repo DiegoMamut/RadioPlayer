@@ -29,7 +29,7 @@
             android:layout_height="0dp" android:layout_width="230dp" 
             android:layout_weight="1" android:layout_gravity="center_horizontal">
 
-               <ImageButton android:id="@+id/play1" android:background="@color/button_main_color" android:src="@drawable/bbcradio1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.54"/>
+               <ImageButton android:id="@+id/play1" android:background="@color/button_main_color" android:src="@drawable/bbcradio1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.50"/>
  
                      
               <ImageButton android:id="@+id/play1xtra" android:background="@color/button_main_color" android:src="@drawable/bbcradio1xtra" android:layout_weight="0.50" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent"/>
@@ -128,14 +128,15 @@
                      />
     </LinearLayout>
 
-			
-			
-		
 			<ProgressBar
-				android:id="@+id/view_main_progress"
-				android:visibility="invisible"
-				style="?android:attr/progressBarStyleHorizontal"
-			android:layout_height="0dp" android:layout_weight="2.25" android:layout_width="152dp" android:layout_gravity="center" android:padding="2dp"/>
+			    android:id="@+id/view_main_progress"
+			    style="?android:attr/progressBarStyleHorizontal"
+			    android:layout_width="152dp"
+			    android:layout_height="15dp"
+			    android:layout_gravity="center"
+			    android:layout_weight="1.5"
+			    android:padding="1dp"
+			    android:visibility="invisible" />
 
 			<!--
 			<Button
@@ -144,11 +145,17 @@
 				style="@style/button_main"
 			/>
 			-->
+
     <LinearLayout
-            android:orientation="horizontal" android:paddingTop="1mm" 
-            android:weightSum="1" android:baselineAligned="false" 
-            android:layout_height="11dp" android:layout_width="277dp" 
-            android:layout_weight="1" android:layout_gravity="center_horizontal">
+        android:layout_width="277dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingTop="1mm"
+        android:weightSum="1" >
+
                      />
     </LinearLayout>
 
