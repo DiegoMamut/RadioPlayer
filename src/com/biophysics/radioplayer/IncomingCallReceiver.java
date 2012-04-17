@@ -9,6 +9,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback {
 
     @Override
@@ -37,6 +38,32 @@ public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCal
 
             }
     }
+=======
+public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback{
+	
+
+	
+	
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Bundle bundle = intent.getExtras();
+		
+		if(null == bundle)
+			return;
+		
+		String state = bundle.getString(TelephonyManager.EXTRA_STATE);
+				
+		if(state.equalsIgnoreCase(TelephonyManager.ACTION_PHONE_STATE_CHANGED))
+
+		{
+            String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
+            Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
+            String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
+            Toast.makeText(context, info, Toast.LENGTH_LONG).show();
+			System.exit(0);
+		}
+	}
+>>>>>>> origin/master
 
 	public void playerStarted() {
 		// TODO Auto-generated method stub
