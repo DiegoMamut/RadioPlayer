@@ -35,7 +35,7 @@ public abstract class AACPlayer {
      * The default expected bitrate.
      * Used only if not specified in play() methods.
      */
-    public static final int DEFAULT_EXPECTED_KBITSEC_RATE = 64;
+    public static final int DEFAULT_EXPECTED_KBITSEC_RATE = 48;
 
 
     /**

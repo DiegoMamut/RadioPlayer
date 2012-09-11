@@ -37,8 +37,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.50"
+            android:layout_weight="0.5"
             android:background="@color/button_main_color"
+            android:contentDescription="@android:string/cancel"
             android:src="@drawable/bbcradio1" />
 
         <ImageButton
@@ -48,7 +49,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.50"
             android:background="@color/button_main_color"
+            android:contentDescription="@android:string/cancel"
             android:src="@drawable/bbcradio1xtra" />
+
                      />
     </LinearLayout>
 
@@ -58,6 +61,7 @@
        android:layout_gravity="center_horizontal"
        android:layout_weight="1"
        android:baselineAligned="false"
+       android:contentDescription="@android:string/cancel"
        android:orientation="horizontal"
        android:paddingTop="1mm"
        android:weightSum="1" >
