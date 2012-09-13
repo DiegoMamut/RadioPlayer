@@ -22,6 +22,7 @@ package com.biophysics.radioplayer;
 //import java.io.InputStreamReader;
 //import java.lang.String;
 //import java.lang.StringBuilder;
+import android.util.Log;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -269,7 +270,7 @@ public class AACPlayerActivity extends Activity implements
 				break;
 			}
 		} catch (Exception e) {
-//			Log.e("AACPlayerActivity", "exc", e);
+			Log.e("AACPlayerActivity", "exc", e);
 		}
 	}
 
@@ -607,7 +608,7 @@ public class AACPlayerActivity extends Activity implements
 			disableButtons();
 			NetworkInfo[] netInfo = conMgr.getAllNetworkInfo();
 					for (NetworkInfo ni : netInfo) {
-//							Log.d("HaveNetworkConnection()", ni.toString());
+							Log.d("HaveNetworkConnection()", ni.toString());
 								if (ni.getTypeName().equalsIgnoreCase("WIFI")) {
 										HaveConnectedWifi = true;
 										mWifiLock.acquire();
