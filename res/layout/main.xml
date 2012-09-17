@@ -15,11 +15,13 @@
   		      		    android:layout_alignParentRight="true" android:orientation="vertical">
 
 			<LinearLayout
-				android:orientation="horizontal" 
-				android:layout_width="match_parent" 
-				android:baselineAligned="false" 
-				android:layout_gravity="fill_horizontal" 
-				android:weightSum="1" android:layout_height="0dp" android:layout_weight="1">
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_gravity="fill_horizontal"
+			    android:baselineAligned="false"
+			    android:orientation="horizontal"
+			    android:weightSum="1" >
+
 			</LinearLayout>
 
     <LinearLayout
@@ -35,22 +37,20 @@
         <ImageButton
             android:id="@+id/play1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.5"
-            android:background="@color/button_main_color"
-            android:contentDescription="@android:string/cancel"
-            android:src="@drawable/bbcradio1" />
-
-        <ImageButton
-            android:id="@+id/play1xtra"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.50"
             android:background="@color/button_main_color"
-            android:contentDescription="@android:string/cancel"
-            android:src="@drawable/bbcradio1xtra" />
+            android:src="@drawable/npr" />
+
+       <ImageButton
+           android:id="@+id/play1xtra"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_horizontal"
+           android:layout_weight="0.50"
+           android:background="@color/button_main_color"
+           android:src="@drawable/bbcradio1xtra" />
 
                      />
     </LinearLayout>
