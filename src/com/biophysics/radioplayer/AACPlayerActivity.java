@@ -528,6 +528,7 @@ public class AACPlayerActivity extends Activity implements
 		String ret = part1.substring(0, part1.indexOf(end) );
 *///		String ret = "mms://a243.l3944038972.c39440.g.lm.akamaistream.net/D/243/39440/v0001/reflector:38972";
 //		String ret = "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio4_q";
+//		rtmpdump -r rtmp://cp60697.live.edgefcs.net -a live -y Radio_4_Int@6448 -o o.flv -v
 		String ret = "mms://a243.l3944038972.c39440.g.lm.akamaistream.net/D/243/39440/v0001/reflector:38972";
 		return ret;
 	}
