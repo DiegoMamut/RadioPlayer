@@ -208,10 +208,10 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
      * The main execution loop which should be executed in its own thread.
      */
     public void run() {
-        Log.d( LOG, "run(): sampleRate=" + sampleRate + ", channels=" + channels
+/*        Log.d( LOG, "run(): sampleRate=" + sampleRate + ", channels=" + channels
             + ", bufferSizeInBytes=" + bufferSizeInBytes
             + " (" + bufferSizeInMs + " ms)");
-
+*/
         AudioTrack atrack = new AudioTrack(
                                 AudioManager.STREAM_MUSIC,
                                 sampleRate,

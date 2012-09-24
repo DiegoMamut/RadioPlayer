@@ -84,9 +84,6 @@ public class AACPlayerActivity extends Activity implements
 	private ProgressBar progress;
 	private Handler uiHandler;
 
-	/**
-	 * Decoder features: FAAD | FFmpeg | OpenCORE
-	 */
 
 	private AACPlayer aacPlayer;
 
@@ -494,8 +491,10 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlFivextra() throws Exception {
-		//String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0";
-		String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432" ;
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0";
+		// These two are from NPR
+		//String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432" ;
+		//String ret = "http://npr.ic.llnwd.net/stream/npr_live24";
 		return ret;
 	}
 

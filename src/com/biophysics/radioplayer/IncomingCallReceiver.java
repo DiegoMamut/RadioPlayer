@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.widget.Toast;
 
 public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback {
@@ -18,17 +17,17 @@ public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCal
             if(null == bundle)
                     return;
            
-            Log.i("IncomingCallReceiver",bundle.toString());
+//            Log.i("IncomingCallReceiver",bundle.toString());
            
             String state = bundle.getString(TelephonyManager.EXTRA_STATE);
                            
-            Log.i("IncomingCallReceiver","State: "+ state);
+//            Log.i("IncomingCallReceiver","State: "+ state);
            
             if(state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))
             {
                     String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
                                                
-                    Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
+//                    Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
                    
                     String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
                    

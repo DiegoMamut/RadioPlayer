@@ -2,11 +2,5 @@
 <resources>
 	<string name="app_name">Radio Player 24</string>
 	<string name="app_version">v2</string>
-	<string name="button_file">Player V (file chunks)</string>
-	<string name="button_stop">STOP</string>
-	<string name="text_exception">Error</string>
-	<string name="text_buffering">Buffering...</string>
-	<string name="text_buffers">Buffers (ms)</string>
-	<string name="text_buffers_decode">Decode</string>
-	<string name="text_using_MMSWMA">MMS/WMA ...</string>
+	
 </resources>

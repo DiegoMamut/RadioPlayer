@@ -27,12 +27,11 @@ public final class R {
         public static final int bbcradio5=0x7f020007;
         public static final int bbcradio5xtra=0x7f020008;
         public static final int bbcws=0x7f020009;
-        public static final int eject=0x7f02000a;
-        public static final int icon=0x7f02000b;
-        public static final int main_background=0x7f02000e;
-        public static final int main_background_black=0x7f02000f;
-        public static final int npr=0x7f02000c;
-        public static final int stop=0x7f02000d;
+        public static final int icon=0x7f02000a;
+        public static final int main_background=0x7f02000d;
+        public static final int main_background_black=0x7f02000e;
+        public static final int npr=0x7f02000b;
+        public static final int stop=0x7f02000c;
     }
     public static final class id {
         public static final int play1=0x7f080000;
@@ -54,23 +53,22 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f060000;
         public static final int app_version=0x7f060001;
-        public static final int button_close=0x7f060009;
-        public static final int button_faad2=0x7f06000a;
-        public static final int button_ffmpeg=0x7f06000b;
-        public static final int button_file=0x7f060002;
-        public static final int button_mmswma=0x7f06000c;
-        public static final int button_stop=0x7f060003;
-        public static final int text_buffering=0x7f060005;
-        public static final int text_buffers=0x7f060006;
-        public static final int text_buffers_audio=0x7f06000d;
-        public static final int text_buffers_decode=0x7f060007;
-        public static final int text_exception=0x7f060004;
-        public static final int text_playing=0x7f060011;
-        public static final int text_stopped=0x7f060012;
-        public static final int text_using_FAAD2=0x7f06000e;
-        public static final int text_using_FFmpeg=0x7f06000f;
-        public static final int text_using_MMSWMA=0x7f060008;
-        public static final int text_using_file_chunks=0x7f060010;
+        public static final int button_close=0x7f060002;
+        public static final int button_faad2=0x7f060003;
+        public static final int button_ffmpeg=0x7f060004;
+        public static final int button_file=0x7f060006;
+        public static final int button_mmswma=0x7f060005;
+        public static final int text_buffering=0x7f060007;
+        public static final int text_buffers=0x7f060008;
+        public static final int text_buffers_audio=0x7f060009;
+        public static final int text_buffers_decode=0x7f06000a;
+        public static final int text_exception=0x7f06000b;
+        public static final int text_playing=0x7f060010;
+        public static final int text_stopped=0x7f060011;
+        public static final int text_using_FAAD2=0x7f06000c;
+        public static final int text_using_FFmpeg=0x7f06000d;
+        public static final int text_using_MMSWMA=0x7f06000e;
+        public static final int text_using_file_chunks=0x7f06000f;
     }
     public static final class style {
         public static final int button_main=0x7f070000;

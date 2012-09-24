@@ -17,7 +17,7 @@
 **/
 package com.biophysics.radioplayer;
 
-import android.util.Log;
+//import android.util.Log;
 
 import java.io.InputStream;
 
@@ -43,7 +43,7 @@ public abstract class AACPlayer {
      * @see setAudioBufferCapacityMs(int)
      * Default = 1500
      */
-    public static final int DEFAULT_AUDIO_BUFFER_CAPACITY_MS = 1500;
+    public static final int DEFAULT_AUDIO_BUFFER_CAPACITY_MS = 2000;
 
 
     /**
@@ -201,7 +201,7 @@ public abstract class AACPlayer {
                     play( url, expectedKBitSecRate );
                 }
                 catch (Exception e) {
-                    Log.e( LOG, "playAsync():", e);
+                    //Log.e( LOG, "playAsync():", e);
 
                     if (playerCallback != null) playerCallback.playerException( e );
                 }
@@ -286,7 +286,7 @@ public abstract class AACPlayer {
     protected void dumpHeaders( URLConnection cn ) {
         for (java.util.Map.Entry<String, java.util.List<String>> me : cn.getHeaderFields().entrySet()) {
             for (String s : me.getValue()) {
-                Log.d( LOG, "header: key=" + me.getKey() + ", val=" + s);
+                //Log.d( LOG, "header: key=" + me.getKey() + ", val=" + s);
                 
             }
         }
