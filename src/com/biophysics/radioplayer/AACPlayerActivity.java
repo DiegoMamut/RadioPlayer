@@ -260,8 +260,8 @@ public class AACPlayerActivity extends Activity implements
 
 			case R.id.stop:
 				stop();
-				enableButtons();
 				System.exit(0);
+//				enableButtons();
 
 				// finish();
 				break;
