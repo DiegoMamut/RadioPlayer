@@ -3,6 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
+	android:keepScreenOn="true"
 	android:padding="1mm" android:background="@drawable/main_background_black">
 
 	<RelativeLayout
@@ -41,7 +42,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.50"
             android:background="@color/button_main_color"
-            android:src="@drawable/npr" />
+            android:src="@drawable/bbcradio1" />
 
        <ImageButton
            android:id="@+id/play1xtra"
@@ -111,7 +112,7 @@
                <ImageButton android:id="@+id/play5" android:background="@color/button_main_color" android:src="@drawable/bbcradio5" android:layout_weight="0.50" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"/>
  
                      
-              <ImageButton android:id="@+id/play5xtra" android:background="@color/button_main_color" android:src="@drawable/bbcradio5xtra" android:layout_weight="0.50" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"/>
+              <ImageButton android:id="@+id/play5xtra" android:background="@color/button_main_color" android:src="@drawable/npr" android:layout_weight="0.50" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_gravity="center_horizontal"/>
 
       
                      />

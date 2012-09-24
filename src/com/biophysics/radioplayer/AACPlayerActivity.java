@@ -79,7 +79,7 @@ public class AACPlayerActivity extends Activity implements
     NotificationManager mNotificationManager;
 
 
-	static final int txtBufAudio = 1500;
+	static final int txtBufAudio = 3500;
 	static final int txtBufDecode = 700;
 	private ProgressBar progress;
 	private Handler uiHandler;
@@ -468,8 +468,7 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlOne() throws Exception {
-		//String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
-		String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432";
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
 		
 		return ret;
 	}
@@ -495,7 +494,8 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlFivextra() throws Exception {
-		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0";
+		//String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio5/5spxtra_bb_live_int_ep1_sl0";
+		String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432" ;
 		return ret;
 	}
 
