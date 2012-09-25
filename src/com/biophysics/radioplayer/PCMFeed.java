@@ -81,8 +81,13 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
     protected PCMFeed( int sampleRate, int channels, int bufferSizeInBytes, PlayerCallback playerCallback ) {
         this.sampleRate = sampleRate;
         this.channels = channels;
-        this.bufferSizeInBytes = bufferSizeInBytes;
+     //   this.bufferSizeInBytes = 912000;
+        this.bufferSizeInBytes = 1000000;
+        // Karthik perhaps the line above makes a bit of sense USE ME
         this.bufferSizeInMs = bytesToMs( bufferSizeInBytes, sampleRate, channels );
+        Log.d( LOG, "conversion...  " + (bufferSizeInBytes/(sampleRate*2)));
+       // return (int)(500L * bytes / (sampleRate * channels));
+
         this.playerCallback = playerCallback;
     }
 
@@ -256,16 +261,20 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
                 writtenTotal += written;
                 int buffered = writtenTotal - atrack.getPlaybackHeadPosition()*channels;
 
-                Log.d( LOG, "PCM fed by " + ln + " and written " + written + " samples - buffered " + buffered);
-
+               // Log.d( LOG, "PCM fed by " + ln + " and written " + written + " samples - buffered " + buffered);
+               // Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " LOCAL SEC or ms " + (bufferSizeInBytes/(sampleRate*2)));
+                // Karthik below in the if clause 44100 was previously bufferSizeInBytes
                 if (!isPlaying) {
-                    if (buffered*2 >= bufferSizeInBytes) {
+                	
+                    if (buffered >= 44100) {
                         Log.d( LOG, "start of AudioTrack - buffered " + buffered + " samples");
                         atrack.play();
                         isPlaying = true;
                     }
                     else {
                         Log.d( LOG, "start buffer not filled enough - AudioTrack not started yet");
+                        Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " LOCAL SEC or ms " + (bufferSizeInBytes/(sampleRate*2)));
+
                     }
                 }
 

@@ -19,6 +19,8 @@ package com.biophysics.radioplayer;
 
 import java.io.InputStream;
 
+import android.util.Log;
+
 
 
 /**
@@ -33,7 +35,7 @@ import java.io.InputStream;
  */
 public class ArrayAACPlayer extends AACPlayer {
 
-//    private static final String LOG = "ArrayAACPlayer";
+    private static final String LOG = "ArrayAACPlayer";
 
     private ArrayDecoder decoder;
 
@@ -74,7 +76,7 @@ public class ArrayAACPlayer extends AACPlayer {
                             int audioBufferCapacityMs, int decodeBufferCapacityMs ) {
 
         super( playerCallback, audioBufferCapacityMs, decodeBufferCapacityMs );
-
+        Log.d( LOG, "ArrayAACPlayer audioBufferCapacityMs " + audioBufferCapacityMs);
         this.decoder = decoder;
     }
 

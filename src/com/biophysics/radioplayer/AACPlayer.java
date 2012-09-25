@@ -43,7 +43,7 @@ public abstract class AACPlayer {
      * @see setAudioBufferCapacityMs(int)
      * Default = 1500
      */
-    public static final int DEFAULT_AUDIO_BUFFER_CAPACITY_MS = 2000;
+    public static final int DEFAULT_AUDIO_BUFFER_CAPACITY_MS = 1500;
 
 
     /**
@@ -103,6 +103,7 @@ public abstract class AACPlayer {
      */
     protected AACPlayer( PlayerCallback playerCallback, int audioBufferCapacityMs, int decodeBufferCapacityMs ) {
         setPlayerCallback( playerCallback );
+        // Karthik change buffer here - does not make any difference
         setAudioBufferCapacityMs( audioBufferCapacityMs );
         setDecodeBufferCapacityMs( decodeBufferCapacityMs );
     }

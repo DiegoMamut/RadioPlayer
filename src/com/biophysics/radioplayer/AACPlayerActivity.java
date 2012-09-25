@@ -78,9 +78,11 @@ public class AACPlayerActivity extends Activity implements
     AudioManager mAudioManager;
     NotificationManager mNotificationManager;
 
-
-	static final int txtBufAudio = 3500;
+// This buffer does not matter karthik
+	static final int txtBufAudio = 1500;
 	static final int txtBufDecode = 700;
+    private static final String LOG = "Progress bar ";
+
 	private ProgressBar progress;
 	private Handler uiHandler;
 
@@ -136,10 +138,13 @@ public class AACPlayerActivity extends Activity implements
 
 		uiHandler.post(new Runnable() {
 			public void run() {
-				progress.setProgress(audioBufferSizeMs * progress.getMax()
-						/ audioBufferCapacityMs);
+				//progress.setProgress(audioBufferSizeMs * progress.getMax()/ audioBufferCapacityMs);
+				progress.setProgress(audioBufferSizeMs * progress.getMax()/ 5500);
+				// Karthik see progress bar MAX is fixed to 5.5 seconds above
 				// if (isPlaying) txtPlayStatus.setText( R.string.text_playing
 				// );
+		        //Log.d( LOG, "current size of audiobuffersizeMs " + audioBufferSizeMs + "audioBufferCapacityMs" + audioBufferCapacityMs );
+
 			}
 		});
 	}
