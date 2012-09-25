@@ -256,7 +256,7 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
                 writtenTotal += written;
                 int buffered = writtenTotal - atrack.getPlaybackHeadPosition()*channels;
 
-                // Log.d( LOG, "PCM fed by " + ln + " and written " + written + " samples - buffered " + buffered);
+                Log.d( LOG, "PCM fed by " + ln + " and written " + written + " samples - buffered " + buffered);
 
                 if (!isPlaying) {
                     if (buffered*2 >= bufferSizeInBytes) {
