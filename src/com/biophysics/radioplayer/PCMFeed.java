@@ -267,13 +267,13 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
                 if (!isPlaying) {
                 	
                     if (buffered >= 44100) {
-                        Log.d( LOG, "start of AudioTrack - buffered " + buffered + " samples");
+                       // Log.d( LOG, "start of AudioTrack - buffered " + buffered + " samples");
+                        Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " LOCAL SEC or ms " + (bufferSizeInBytes/(sampleRate*2)));
                         atrack.play();
                         isPlaying = true;
                     }
                     else {
                         Log.d( LOG, "start buffer not filled enough - AudioTrack not started yet");
-                        Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " LOCAL SEC or ms " + (bufferSizeInBytes/(sampleRate*2)));
 
                     }
                 }
