@@ -23,6 +23,8 @@ import java.io.InputStream;
 
 import java.net.URLConnection;
 
+import android.util.Log;
+
 
 /**
  * This is the AACPlayer parent class.
@@ -198,7 +200,8 @@ public abstract class AACPlayer {
         new Thread(new Runnable() {
             public void run() {
                 try {
- //               	Thread.sleep(1000);
+                	Thread.sleep(1000);
+                    Log.d( LOG, "AACPlayer: Just before playing  " + url);
                     play( url, expectedKBitSecRate );
                 }
                 catch (Exception e) {
@@ -211,14 +214,6 @@ public abstract class AACPlayer {
     }
 
 
-    /**
-     * Plays a stream synchronously.
-     * @param url the URL of the stream or file
-     */
-    public void play( String url ) throws Exception {
-        play( url, -1 );
-    }
-
 
     /**
      * Plays a stream synchronously.
@@ -227,6 +222,8 @@ public abstract class AACPlayer {
      */
     public void play( String url, int expectedKBitSecRate ) throws Exception {
         if (url.startsWith( "mms://" )) {
+            Log.d( LOG, "AACPlayer: mmsinputstream  " + url);
+
             play( new MMSInputStream( url ), expectedKBitSecRate );
         }
     }
@@ -235,14 +232,7 @@ public abstract class AACPlayer {
     
     
  
-    /**
-     * Plays a stream synchronously.
-     * @param is the input stream
-     
-    public void play( InputStream is ) throws Exception {
-        play( is, -1 );
-    }
-*/
+
 
     /**
      * Plays a stream synchronously.
@@ -251,6 +241,7 @@ public abstract class AACPlayer {
      */
     public final void play( InputStream is, int expectedKBitSecRate ) throws Exception {
         stopped = false;
+        Log.d( LOG, "AACPlayer: expectedKBitSecRate " + expectedKBitSecRate);
 
         if (playerCallback != null) playerCallback.playerStarted();
 
@@ -258,8 +249,10 @@ public abstract class AACPlayer {
 
         sumKBitSecRate = 0;
         countKBitSecRate = 0;
+        Log.d( LOG, "AACPlayer: expectedKBitSecRate " + expectedKBitSecRate);
 
         playImpl( is, expectedKBitSecRate );
+
     }
 
 
@@ -283,15 +276,15 @@ public abstract class AACPlayer {
      */
     protected abstract void playImpl( InputStream is, int expectedKBitSecRate ) throws Exception;
 
-
+/*
     protected void dumpHeaders( URLConnection cn ) {
         for (java.util.Map.Entry<String, java.util.List<String>> me : cn.getHeaderFields().entrySet()) {
             for (String s : me.getValue()) {
-                //Log.d( LOG, "header: key=" + me.getKey() + ", val=" + s);
+                Log.d( LOG, "header: key=" + me.getKey() + ", val=" + s);
                 
             }
         }
-    }
+    }*/
 
 
     protected int computeAvgKBitSecRate( Decoder.Info info ) {

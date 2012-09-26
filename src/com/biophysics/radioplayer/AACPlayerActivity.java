@@ -79,7 +79,7 @@ public class AACPlayerActivity extends Activity implements
     NotificationManager mNotificationManager;
 
 // This buffer does not matter karthik
-	static final int txtBufAudio = 1500;
+	static final int txtBufAudio = 4600;
 	static final int txtBufDecode = 700;
     private static final String LOG = "Progress bar ";
 
@@ -138,8 +138,8 @@ public class AACPlayerActivity extends Activity implements
 
 		uiHandler.post(new Runnable() {
 			public void run() {
-				//progress.setProgress(audioBufferSizeMs * progress.getMax()/ audioBufferCapacityMs);
-				progress.setProgress(audioBufferSizeMs * progress.getMax()/ 5500);
+				progress.setProgress(audioBufferSizeMs * progress.getMax()/ audioBufferCapacityMs);
+				//progress.setProgress(audioBufferSizeMs * progress.getMax()/ 5500);
 				// Karthik see progress bar MAX is fixed to 5.5 seconds above
 				// if (isPlaying) txtPlayStatus.setText( R.string.text_playing
 				// );
@@ -470,8 +470,9 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlOne() throws Exception {
-		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
-		
+		//String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
+		// NPR below
+		String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432";
 		return ret;
 	}
 

@@ -81,8 +81,8 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
     protected PCMFeed( int sampleRate, int channels, int bufferSizeInBytes, PlayerCallback playerCallback ) {
         this.sampleRate = sampleRate;
         this.channels = channels;
-     //   this.bufferSizeInBytes = 912000;
-        this.bufferSizeInBytes = 1000000;
+        this.bufferSizeInBytes = bufferSizeInBytes;
+     //   this.bufferSizeInBytes = 1000000;
         // Karthik perhaps the line above makes a bit of sense USE ME
         this.bufferSizeInMs = bytesToMs( bufferSizeInBytes, sampleRate, channels );
         Log.d( LOG, "conversion...  " + (bufferSizeInBytes/(sampleRate*2)));
@@ -213,10 +213,10 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
      * The main execution loop which should be executed in its own thread.
      */
     public void run() {
-/*        Log.d( LOG, "run(): sampleRate=" + sampleRate + ", channels=" + channels
+        Log.d( LOG, "PCMFEED run(): sampleRate=" + sampleRate + ", channels=" + channels
             + ", bufferSizeInBytes=" + bufferSizeInBytes
             + " (" + bufferSizeInMs + " ms)");
-*/
+
         AudioTrack atrack = new AudioTrack(
                                 AudioManager.STREAM_MUSIC,
                                 sampleRate,
@@ -262,7 +262,7 @@ public abstract class PCMFeed implements Runnable, AudioTrack.OnPlaybackPosition
                 int buffered = writtenTotal - atrack.getPlaybackHeadPosition()*channels;
 
                // Log.d( LOG, "PCM fed by " + ln + " and written " + written + " samples - buffered " + buffered);
-               // Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " LOCAL SEC or ms " + (bufferSizeInBytes/(sampleRate*2)));
+               // Log.d( LOG, "current buffered " + buffered + " SET-bufferSizeInBytes " + bufferSizeInBytes + " ms " + bufferSizeInMs);
                 // Karthik below in the if clause 44100 was previously bufferSizeInBytes
                 if (!isPlaying) {
                 	

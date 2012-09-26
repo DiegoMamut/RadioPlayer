@@ -102,12 +102,13 @@ public class ArrayBufferReader implements Runnable {
         this.capacity = capacity;
         this.is = is;
 
-//        Log.d( LOG, "init(): capacity=" + capacity );
 
         buffers = new Buffer[3];
 
         for (int i=0; i < buffers.length; i++) {
             buffers[i] = new Buffer( capacity );
+            Log.d( LOG, "init(): i=" + buffers[i] );
+
         }
 
         indexMine = 0;

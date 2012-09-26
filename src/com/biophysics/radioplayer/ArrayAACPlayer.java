@@ -90,11 +90,14 @@ public class ArrayAACPlayer extends AACPlayer {
      * This is the implementation method calle by every play() and playAsync() methods.
      * @param is the input stream
      * @param expectedKBitSecRate the expected average bitrate in kbit/sec
+     * This calls the JNI code
      */
     protected void playImpl( InputStream is, int expectedKBitSecRate ) throws Exception {
-        ArrayBufferReader reader = new ArrayBufferReader(
-                                        computeInputBufferSize( expectedKBitSecRate, decodeBufferCapacityMs ),
-                                        is );
+        ArrayBufferReader reader = new ArrayBufferReader(262144, is );
+                                       // computeInputBufferSize( expectedKBitSecRate, decodeBufferCapacityMs ),
+                                       // 16384, is );
+        // 262144 is 256 KB or may be 128 KB per channel?
+        // Karthik - change buffer here
         new Thread( reader ).start();
 
         ArrayPCMFeed pcmfeed = null;
@@ -108,7 +111,7 @@ public class ArrayAACPlayer extends AACPlayer {
         try {
             Decoder.Info info = decoder.start( reader );
 
- //           Log.d( LOG, "play(): samplerate=" + info.getSampleRate() + ", channels=" + info.getChannels());
+            Log.d( LOG, "playImpl(): samplerate=" + info.getSampleRate() + ", channels=" + info.getChannels());
 
             profSampleRate = info.getSampleRate() * info.getChannels();
 
@@ -148,6 +151,7 @@ public class ArrayAACPlayer extends AACPlayer {
                     reader.setCapacity( computeInputBufferSize( kBitSecRate, decodeBufferCapacityMs ));
                     expectedKBitSecRate = kBitSecRate;
                 }
+//                Log.d( LOG, "playImpl(): decodeBuffer=" + decodeBuffer);
 
                 decodeBuffer = decodeBuffers[ ++decodeBufferIndex % 3 ];
             } while (!stopped);
@@ -161,15 +165,14 @@ public class ArrayAACPlayer extends AACPlayer {
 
             int perf = 0;
 
-//            if (profCount > 0) Log.i( LOG, "play(): average decoding time: " + profMs / profCount + " ms");
 
             if (profMs > 0) {
                 perf = (int)((1000*profSamples / profMs - profSampleRate) * 100 / profSampleRate);
 
- //               Log.i( LOG, "play(): average rate (samples/sec): audio=" + profSampleRate
- //                   + ", decoding=" + (1000*profSamples / profMs)
- //                   + ", audio/decoding= " + perf
- //                   + " %  (the higher, the better; negative means that decoding is slower than needed by audio)");
+                Log.i( LOG, "play(): average rate (samples/sec): audio=" + profSampleRate
+                   + ", decoding=" + (1000*profSamples / profMs)
+                    + ", audio/decoding= " + perf
+                    + " %  (the higher, the better; negative means that decoding is slower than needed by audio)");
             }
 
             if (pcmfeedThread != null) pcmfeedThread.join();
@@ -198,7 +201,7 @@ public class ArrayAACPlayer extends AACPlayer {
 
     private ArrayPCMFeed createArrayPCMFeed( Decoder.Info info ) {
         int size = PCMFeed.msToBytes( audioBufferCapacityMs, info.getSampleRate(), info.getChannels());
-
+        Log.i( LOG, "ArrayAACPlayer: size " + size );
         return new ArrayPCMFeed( info.getSampleRate(), info.getChannels(), size, playerCallback );
     }
 
