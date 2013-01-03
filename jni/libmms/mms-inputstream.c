@@ -40,7 +40,7 @@ typedef struct MMSInfo {
 JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeConnect
   (JNIEnv *env, jobject thiz, jstring jurl)
 {
-    ALOG_TRACE( "nativeConnect() start" );
+    ALOG_DEBUG( "nativeConnect() start" );
 
     jsize url_clen = (*env)->GetStringLength( env, jurl );
     jsize url_blen = (*env)->GetStringUTFLength( env, jurl );
@@ -70,7 +70,7 @@ JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeConn
     minfo->mms = mms;
 
     ALOG_DEBUG( "nativeConnect() info=%p", minfo );
-    ALOG_TRACE( "nativeConnect() end" );
+    ALOG_DEBUG( "nativeConnect() end" );
 
     return (jint) minfo;
 }
@@ -84,7 +84,7 @@ JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeConn
 JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeRead
   (JNIEnv *env, jobject thiz, jint jminfo, jbyteArray jbuf, jint off, jint len)
 {
-    ALOG_TRACE( "nativeRead() start" );
+    ALOG_DEBUG( "nativeRead() start" );
 
     MMSInfo *minfo = (MMSInfo*) jminfo;
 
@@ -92,22 +92,22 @@ JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeRead
 
     if (len > minfo->bbsize)
     {
-        ALOG_TRACE( "nativeRead() extending buffer %d -> %d bytes", minfo->bbsize, len );
+        ALOG_DEBUG( "nativeRead() extending buffer %d -> %d bytes", minfo->bbsize, len );
         if (minfo->buffer) free( minfo->buffer );
 
         minfo->buffer = malloc( len );
         minfo->bbsize = len;
     }
 
-    ALOG_TRACE( "nativeRead() calling mmsx_read len=%d", len );
+    ALOG_DEBUG( "nativeRead() calling mmsx_read len=%d", len );
 
     int n = mmsx_read( NULL, minfo->mms, minfo->buffer, len );
 
-    ALOG_TRACE( "nativeRead() got %d bytes from mmsx_read", n );
+    ALOG_DEBUG( "nativeRead() got %d bytes from mmsx_read", n );
 
     (*env)->SetByteArrayRegion( env, jbuf, off, n, minfo->buffer );
 
-    ALOG_TRACE( "nativeRead() end" );
+    ALOG_DEBUG( "nativeRead() end" );
 
     return n;
 }
@@ -121,7 +121,7 @@ JNIEXPORT jint JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeRead
 JNIEXPORT void JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeClose
   (JNIEnv *env, jobject thiz, jint jminfo)
 {
-    ALOG_TRACE( "nativeClose() start" );
+    ALOG_DEBUG( "nativeClose() start" );
 
     MMSInfo *minfo = (MMSInfo*) jminfo;
 
@@ -132,13 +132,13 @@ JNIEXPORT void JNICALL Java_com_biophysics_radioplayer_MMSInputStream_nativeClos
     if (minfo->buffer) free( minfo->buffer );
     free( minfo );
 
-    ALOG_TRACE( "nativeClose() end" );
+    ALOG_DEBUG( "nativeClose() end" );
 }
 
 
 int android_string_utf16(void *android_jni, char *dest, char *src, int dest_len)
 {
-    ALOG_TRACE( "android_string_utf16() start" );
+    ALOG_DEBUG( "android_string_utf16() start" );
 
     JNIEnv *env = (JNIEnv*) android_jni;
     int iblen = strlen(src);
@@ -159,7 +159,7 @@ int android_string_utf16(void *android_jni, char *dest, char *src, int dest_len)
     jchar *oc = (jchar*)(dest + clen*2);
     *oc = 0;
 
-    ALOG_TRACE( "android_string_utf16() end" );
+    ALOG_DEBUG( "android_string_utf16() end" );
 
     return ret;
 }

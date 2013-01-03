@@ -21,6 +21,8 @@ package com.biophysics.radioplayer;
 import java.io.InputStream;
 import java.io.IOException;
 
+import android.util.Log;
+
 
 /**
  * This is a MMS input stream - reads data from a MMS stream.
@@ -36,7 +38,10 @@ public class MMSInputStream extends InputStream {
 
 //    private static final String LOG = "MMSInputStream"; 
 
-    private static boolean libLoaded = false;
+    private static final String LOG = null;
+
+
+	private static boolean libLoaded = false;
 
 
     ////////////////////////////////////////////////////////////////////////////
@@ -57,6 +62,7 @@ public class MMSInputStream extends InputStream {
         ensureLibLoaded();
 
         mms = nativeConnect( url );
+
     }
 
 
@@ -101,6 +107,8 @@ public class MMSInputStream extends InputStream {
     private static synchronized void ensureLibLoaded() {
         if (!libLoaded) {
             System.loadLibrary( "mms" );
+            Log.d( LOG, "mms library was  just loaded" );
+
             libLoaded = true;
         }
     }

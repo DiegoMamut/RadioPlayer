@@ -107,7 +107,6 @@ public class ArrayBufferReader implements Runnable {
 
         for (int i=0; i < buffers.length; i++) {
             buffers[i] = new Buffer( capacity );
-            Log.d( LOG, "init(): i=" + buffers[i] );
 
         }
 

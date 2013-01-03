@@ -225,6 +225,8 @@ public abstract class AACPlayer {
             Log.d( LOG, "AACPlayer: mmsinputstream  " + url);
 
             play( new MMSInputStream( url ), expectedKBitSecRate );
+            Log.d( LOG, "AACPlayer: 2mmsinputstream  " + url);
+
         }
     }
 
@@ -275,7 +277,6 @@ public abstract class AACPlayer {
      * @param expectedKBitSecRate the expected average bitrate in kbit/sec
      */
     protected abstract void playImpl( InputStream is, int expectedKBitSecRate ) throws Exception;
-
 /*
     protected void dumpHeaders( URLConnection cn ) {
         for (java.util.Map.Entry<String, java.util.List<String>> me : cn.getHeaderFields().entrySet()) {

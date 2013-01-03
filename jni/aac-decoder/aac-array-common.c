@@ -48,7 +48,7 @@ AACDArrayInfo* aacda_start( JNIEnv *env, AACDDecoder *decoder, jobject jreader, 
 
     ainfo->decoder = decoder;
 
-    AACD_TRACE( "start() calling init() of the decoder - %s", decoder->name());
+    AACD_INFO( "start() calling init() of the decoder - %s", decoder->name());
 
     if (ainfo->decoder->init(&ainfo->ext))
     {

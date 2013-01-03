@@ -85,5 +85,5 @@
 /* #undef HAVE_GLIB_H */
 
 /* Define to 1 if you porting to Android. */
-#define OS_ANDROID 1
+#define OS_ANDROID 0
 

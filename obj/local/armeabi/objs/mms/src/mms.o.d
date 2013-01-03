@@ -1,242 +1,246 @@
-/mydata/karthik/android/workspace/git/RadioPlayer/obj/local/armeabi/objs/mms/src/mms.o: \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms.c \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/config.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/unistd.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdint.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/posix_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/stddef.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/compiler.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/posix_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/kernel.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/select.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/time.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/time.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/signal.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/limits.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/limits.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/limits.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/internal_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/limits.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/syslimits.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/string.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/malloc.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/signal.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/siginfo.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/sysconf.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/capability.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/pathconf.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdio.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/socket.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/socket.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/socket.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/sockios.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/sockios.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/uio.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netinet/in.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/endian.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/endian.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/in.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/byteorder.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/little_endian.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/swab.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/generic.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/in6.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netinet/in6.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netdb.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/stat.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/stat.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/fcntl.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/fcntl.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/fcntl.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/fcntl.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/errno.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/errno.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/errno.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdlib.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/alloca.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/strings.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/memory.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/time.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/android-log.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/android/log.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/bswap.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/inttypes.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mmsio.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms_config.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/asfheader.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/uri.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms-common.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms-common-funcs.h
+obj/local/armeabi/objs/mms/src/mms.o: jni/libmms/src/mms.c \
+ jni/libmms/config.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/unistd.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/api-level.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdint.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/posix_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/stddef.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/compiler.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/posix_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/kernel.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/select.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/time.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/time.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/signal.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/limits.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/limits.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/limits.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/internal_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/limits.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/syslimits.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/string.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/malloc.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/signal.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/sigcontext.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/siginfo.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/sysconf.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/capability.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/pathconf.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdio.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/socket.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/socket.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/socket.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/sockios.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/sockios.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/uio.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netinet/in.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/endian.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/endian.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/in.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/byteorder.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/little_endian.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/swab.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/generic.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/in6.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/ipv6.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netinet/in6.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netdb.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/stat.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/stat.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/fcntl.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/fcntl.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/fcntl.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/fcntl.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/errno.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/errno.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/errno.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdlib.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/alloca.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/strings.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/memory.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/time.h \
+ jni/libmms/android-log.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/log.h \
+ jni/libmms/src/bswap.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/inttypes.h \
+ jni/libmms/src/mms.h jni/libmms/src/mmsio.h jni/libmms/src/mms_config.h \
+ jni/libmms/src/asfheader.h jni/libmms/src/uri.h \
+ jni/libmms/src/mms-common.h jni/libmms/src/mms-common-funcs.h
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/config.h:
+jni/libmms/config.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/unistd.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/unistd.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/api-level.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdint.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdint.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/posix_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/stddef.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/posix_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/compiler.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/stddef.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/posix_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/compiler.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/posix_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/kernel.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/kernel.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/select.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/sysmacros.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/time.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/select.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/time.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/time.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/signal.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/time.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/limits.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/signal.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/limits.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/limits.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/limits.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/limits.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/internal_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/limits.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/limits.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/internal_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/syslimits.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/limits.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/string.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/syslimits.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/malloc.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/string.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/signal.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/malloc.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/signal.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/siginfo.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/signal.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/sigcontext.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/sysconf.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/siginfo.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/capability.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/siginfo.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/pathconf.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/sysconf.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdio.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/capability.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/socket.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/pathconf.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/socket.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdio.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/socket.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/socket.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/sockios.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/socket.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/sockios.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/socket.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/uio.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/sockios.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netinet/in.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/sockios.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/endian.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/uio.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/endian.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netinet/in.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/in.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/endian.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/byteorder.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/endian.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/little_endian.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/in.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/swab.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/byteorder.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/byteorder/generic.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/little_endian.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/in6.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/swab.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netinet/in6.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/byteorder/generic.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/netdb.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/in6.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/stat.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/ipv6.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/stat.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netinet/in6.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/fcntl.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/netdb.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/fcntl.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/stat.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/fcntl.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/stat.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/fcntl.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/fcntl.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/errno.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/fcntl.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/linux/errno.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/fcntl.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm/errno.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/fcntl.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/errno.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/linux/errno.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdlib.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm/errno.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/alloca.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/strings.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/memory.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdlib.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/time.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/alloca.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/android-log.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/strings.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/android/log.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/memory.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/bswap.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/time.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/inttypes.h:
+jni/libmms/android-log.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/log.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mmsio.h:
+jni/libmms/src/bswap.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms_config.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/inttypes.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/asfheader.h:
+jni/libmms/src/mms.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/uri.h:
+jni/libmms/src/mmsio.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms-common.h:
+jni/libmms/src/mms_config.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/libmms/src/mms-common-funcs.h:
+jni/libmms/src/asfheader.h:
+
+jni/libmms/src/uri.h:
+
+jni/libmms/src/mms-common.h:
+
+jni/libmms/src/mms-common-funcs.h:

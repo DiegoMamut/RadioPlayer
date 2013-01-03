@@ -1,6 +1,6 @@
 /*
 ** AACPlayer - Freeware Advanced Audio (AAC) Player for Android
-** Copyright (C) 2011 Spolecne s.r.o., http://www.biophysics.com
+** Copyright (C) 2011 Spolecne s.r.o., http://www.spoledge.com
 **  
 ** This program is free software; you can redistribute it and/or modify
 ** it under the terms of the GNU General Public License as published by
@@ -21,16 +21,12 @@
 
 #include <android/log.h>
 
-#ifndef ANDROID_LOG_MODULE
-#error "Please specify ANDROID_LOG_MODULE at the top of your file."
-#endif
 
-
-#ifdef AACD_LOGLEVEL_TRACE
-#define ALOG_TRACE(...) \
+#ifdef AACD_LOGLEVEL_VERBOSE
+#define ALOG_VERBOSE(...) \
     __android_log_print(ANDROID_LOG_VERBOSE, ANDROID_LOG_MODULE, __VA_ARGS__)
 #else
-#define ALOG_TRACE(...) //
+#define ALOG_VERBOSE(...) //
 #endif
 
 #ifdef AACD_LOGLEVEL_DEBUG
@@ -62,5 +58,4 @@
 #define ALOG_ERROR(...) //
 #endif
 
-#endif
-
+#endif  // ANDROID_LOG_H

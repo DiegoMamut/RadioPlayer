@@ -93,7 +93,7 @@ public class ArrayAACPlayer extends AACPlayer {
      * This calls the JNI code
      */
     protected void playImpl( InputStream is, int expectedKBitSecRate ) throws Exception {
-        ArrayBufferReader reader = new ArrayBufferReader(262144, is );
+        ArrayBufferReader reader = new ArrayBufferReader(1024, is );
                                        // computeInputBufferSize( expectedKBitSecRate, decodeBufferCapacityMs ),
                                        // 16384, is );
         // 262144 is 256 KB or may be 128 KB per channel?

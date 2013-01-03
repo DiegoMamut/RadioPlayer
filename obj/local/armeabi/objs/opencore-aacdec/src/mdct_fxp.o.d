@@ -1,38 +1,41 @@
-/mydata/karthik/android/workspace/git/RadioPlayer/obj/local/armeabi/objs/opencore-aacdec/src/mdct_fxp.o: \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.c \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/include/pv_audio_type_defs.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/inttypes.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdint.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/_types.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h \
- /mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fft_rx4.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/mix_radix_fft.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fwd_long_complex_rot.h \
- /mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fwd_short_complex_rot.h
+obj/local/armeabi/objs/opencore-aacdec/src/mdct_fxp.o: \
+ jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.c \
+ jni/aac-decoder/../opencore-aacdec/include/pv_audio_type_defs.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/inttypes.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdint.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/_types.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h \
+ /opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/api-level.h \
+ jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.h \
+ jni/aac-decoder/../opencore-aacdec/src/fft_rx4.h \
+ jni/aac-decoder/../opencore-aacdec/src/mix_radix_fft.h \
+ jni/aac-decoder/../opencore-aacdec/src/fwd_long_complex_rot.h \
+ jni/aac-decoder/../opencore-aacdec/src/fwd_short_complex_rot.h
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/include/pv_audio_type_defs.h:
+jni/aac-decoder/../opencore-aacdec/include/pv_audio_type_defs.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/inttypes.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/inttypes.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/stdint.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/stdint.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/machine/_types.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/machine/_types.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs.h:
 
-/mydata/karthik/android/android-ndk-r6b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.h:
+/opt/android-sdk-linux/android-ndk-r8b/platforms/android-8/arch-arm/usr/include/android/api-level.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fft_rx4.h:
+jni/aac-decoder/../opencore-aacdec/src/mdct_fxp.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/mix_radix_fft.h:
+jni/aac-decoder/../opencore-aacdec/src/fft_rx4.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fwd_long_complex_rot.h:
+jni/aac-decoder/../opencore-aacdec/src/mix_radix_fft.h:
 
-/mydata/karthik/android/workspace/git/RadioPlayer/jni/aac-decoder/../opencore-aacdec/src/fwd_short_complex_rot.h:
+jni/aac-decoder/../opencore-aacdec/src/fwd_long_complex_rot.h:
+
+jni/aac-decoder/../opencore-aacdec/src/fwd_short_complex_rot.h:

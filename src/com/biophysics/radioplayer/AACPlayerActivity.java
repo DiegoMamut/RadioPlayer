@@ -79,7 +79,7 @@ public class AACPlayerActivity extends Activity implements
     NotificationManager mNotificationManager;
 
 // This buffer does not matter karthik
-	static final int txtBufAudio = 4600;
+	static final int txtBufAudio = 1900;
 	static final int txtBufDecode = 700;
     private static final String LOG = "Progress bar ";
 
