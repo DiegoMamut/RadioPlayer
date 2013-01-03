@@ -87,6 +87,9 @@ typedef struct
   void *write_data;
   mms_io_tcp_connect_func connect;
   void *connect_data;
+#ifdef OS_ANDROID
+  void *android_jni;
+#endif
 } mms_io_t;
 
 /* set default IO implementation, it will be used in absence of specific IO

@@ -1045,14 +1045,6 @@ void mmsh_close (mmsh_t *this) {
   free (this);
 }
 
-void mmsh_abort (mmsh_t *this) {
-  if (this == NULL)
-    return;
-  if (this->s != -1) {
-    closesocket(this->s);
-    this->s = -1;
-  }
-}
 
 uint32_t mmsh_get_length (mmsh_t *this) {
   /* we could / should return this->file_len here, but usually this->file_len

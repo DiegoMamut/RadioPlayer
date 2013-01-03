@@ -193,7 +193,7 @@ static int aacd_ff_init( void **pext, AVInputFormat *fmt  )
 {
     AACD_TRACE( "init() start" );
 
-    av_log_set_level( AV_LOG_DEBUG );
+    av_log_set_level( AV_LOG_VERBOSE );
 
     AACDFFmpegInfo *ff = (AACDFFmpegInfo*) av_mallocz( sizeof(struct AACDFFmpegInfo));
 
