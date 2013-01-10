@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.widget.Toast;
 
 public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCallback {
 
