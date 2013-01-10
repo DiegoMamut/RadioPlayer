@@ -25,13 +25,13 @@ public class IncomingCallReceiver extends BroadcastReceiver implements PlayerCal
            
             if(state.equalsIgnoreCase(TelephonyManager.EXTRA_STATE_RINGING))
             {
-                    String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
+                   // String phonenumber = bundle.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
                                                
 //                    Log.i("IncomingCallReceiver","Incomng Number: " + phonenumber);
                    
-                    String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
+                  //  String info = "Detect Calls sample application\nIncoming number: " + phonenumber;
                    
-                    Toast.makeText(context, info, Toast.LENGTH_LONG).show();
+              //      Toast.makeText(context, info, Toast.LENGTH_LONG).show();
                     System.exit(0);
 
             }
