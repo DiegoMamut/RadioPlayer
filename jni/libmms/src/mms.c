@@ -757,6 +757,10 @@ int static mms_choose_best_streams(mms_io_t *io, mms_t *this) {
  */
 /* FIXME: got somewhat broken during xine_stream_t->(void*) conversion */
 mms_t *mms_connect (mms_io_t *io, void *data, const char *url, int bandwidth) {
+
+int count = 0;
+while (count < 1000) {
+
 #ifndef OS_ANDROID
   iconv_t url_conv = (iconv_t)-1;
 #endif
@@ -1016,13 +1020,14 @@ mms_t *mms_connect (mms_io_t *io, void *data, const char *url, int bandwidth) {
   return this;
 
 fail:
-  mms_close(this);
+  //mms_close(this);
+  sleep(1);
 
 #ifndef OS_ANDROID
   if (url_conv != (iconv_t)-1)
     iconv_close(url_conv);
 #endif
-
+}
   return NULL;
 }
 

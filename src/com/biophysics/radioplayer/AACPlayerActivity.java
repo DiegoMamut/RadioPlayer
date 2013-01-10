@@ -474,9 +474,7 @@ public class AACPlayerActivity extends Activity implements
 	}
 
 	private String getUrlOne() throws Exception {
-		//String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_ep1_sl0";
-		// NPR below
-		String ret = "mms://a1671.l2063252432.c20632.g.lm.akamaistream.net/D/1671/20632/v0001/reflector:52432";
+		String ret = "mms://wmlive-nonacl.bbc.net.uk/wms/bbc_ami/radio1/radio1_bb_live_int_eq1_sl0";
 		return ret;
 	}
 
